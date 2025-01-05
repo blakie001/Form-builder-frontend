@@ -43,7 +43,7 @@ const CreateForm = () => {
     // console.log("this is form ttle",{ title: formTitle, input: formInputs })
 
     try {
-        await axios.post("http://localhost:5000/forms/create", { title: formTitle, inputs: formInputs });
+        await axios.post("https://form-builder-9kbm.onrender.com/forms/create", { title: formTitle, inputs: formInputs });
     } catch (error) {
         console.log(error);
     }

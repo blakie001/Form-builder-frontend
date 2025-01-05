@@ -15,7 +15,7 @@ const EditForm = () => {
   useEffect(() => {
     const fetchForm = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/forms/${id}`);
+        const res = await axios.get(`https://form-builder-9kbm.onrender.com/forms/${id}`);
         const { title, inputs } = res.data.form;
         setFormTitle(title);
         setFormInputs(inputs);
@@ -59,7 +59,7 @@ const EditForm = () => {
     }
 
     try {
-      await axios.put(`http://localhost:5000/forms/${id}/edit`, {
+      await axios.put(`https://form-builder-9kbm.onrender.com/forms/${id}/edit`, {
         title: formTitle,
         inputs: formInputs,
       });
