@@ -1,0 +1,143 @@
+
+.create-form-container {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 900px; 
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9; 
+}
+
+.form-title {
+  font-size: 20px;
+  margin-bottom: 15px; 
+  text-align: left; 
+}
+
+.form-title-input {
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding: 8px; 
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.edit-title-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: blue;
+  margin-left: 5px;
+}
+
+.add-input-button,
+.close-input-button,
+.input-type-button,
+.submit-button,
+.create-form-button,
+.edit-input-button,
+.delete-input-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-input-button {
+  background-color: #4285f4;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.close-input-button {
+  background-color: #4285f4;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.input-type-button {
+  background-color: #4285f4;
+  color: white;
+  margin: 5px;
+}
+
+.submit-button,
+.create-form-button {
+  background-color: #188038;
+  color: white;
+  margin-top: 15px;
+}
+.create-form-button{
+  margin: 20px auto;
+  display: block;
+}
+
+.input-types-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.form-editor-title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.form-editor-label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-editor-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.dynamic-inputs-container {
+  margin-bottom: 15px;
+}
+
+.dynamic-input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.dynamic-input label {
+  margin-right: 10px;
+  flex-grow: 1;
+  text-align: left;
+}
+.dynamic-input input{
+  flex-grow: 2;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+.edit-input-button, .delete-input-button {
+  margin-left: 5px;
+}
+.delete-input-button{
+  background-color: rgb(220, 53, 69);
+  color: white;
+}
