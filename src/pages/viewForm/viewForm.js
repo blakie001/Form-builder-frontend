@@ -12,7 +12,7 @@ const ViewForm = () => {
   useEffect(() => {
     const fetchForm = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/forms/${id}`);
+        const response = await axios.get(`https://form-builder-9kbm.onrender.com/forms/${id}`);
         // console.log("Form data:", response.data);
 
         setForm(response.data.form);
@@ -46,7 +46,7 @@ const ViewForm = () => {
     if (validateForm()) {
       try {
         //   console.log(formData);
-        await axios.post(`http://localhost:5000/forms/${id}/submit`, { id: id, response: responses});
+        await axios.post(`https://form-builder-9kbm.onrender.com/forms/${id}/submit`, { id: id, response: responses});
         setSubmitted(true);
       } catch (error) {
         console.error("Error submitting form:", error);

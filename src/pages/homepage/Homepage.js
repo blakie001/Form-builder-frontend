@@ -9,7 +9,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchForms = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/forms/");
+        const res = await axios.get("https://form-builder-9kbm.onrender.com/forms/");
         setForms(res.data.allForms);
       } catch (error) {
         console.log(error);
@@ -20,7 +20,7 @@ const HomePage = () => {
 
   const handleDelete = async(id) =>{
     try {      
-      await axios.delete(`http://localhost:5000/forms/${id}/delete`);
+      await axios.delete(`https://form-builder-9kbm.onrender.com/forms/${id}/delete`);
 
       setForms(forms.filter(form => form._id !== id));
     } catch (error) {
